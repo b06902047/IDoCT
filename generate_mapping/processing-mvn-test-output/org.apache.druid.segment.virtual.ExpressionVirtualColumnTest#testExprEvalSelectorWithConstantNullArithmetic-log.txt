@@ -1,0 +1,12 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.druid:druid-processing[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding druid-processing 25.0.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-checkstyle-plugin:3.0.0:check[m [1m(validate)[m @ [36mdruid-processing[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mmaven-pmd-plugin:3.16.0:check[m [1m(validate)[0;1m > [0;1m:pmd[m @ [36mdruid-processing[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-pmd-plugin:3.16.0:pmd[m [1m(pmd)[m @ [36mdruid-processing[0;1m ---[m
+[[1;34mINFO[m] PMD version: 6.42.0

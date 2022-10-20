@@ -1,0 +1,35 @@
+
+DIMENSION dimC
+============
+ VAL:  CNT: 42
+ VAL: 30 CNT: 6
+ VAL: 31 CNT: 6
+ VAL: 32 CNT: 6
+ VAL: 33 CNT: 6
+ VAL: 34 CNT: 6
+ VAL: 35 CNT: 6
+ VAL: 36 CNT: 6
+ VAL: 37 CNT: 6
+ VAL: 38 CNT: 5
+ VAL: 39 CNT: 5
+
+DIMENSION dimB
+============
+ VAL: Bar CNT: 25
+ VAL: Foo CNT: 25
+ VAL: Hello CNT: 25
+ VAL: World CNT: 25
+
+DIMENSION dimA
+============
+ VAL: 10 CNT: 10
+ VAL: 11 CNT: 10
+ VAL: 12 CNT: 10
+ VAL: 13 CNT: 10
+ VAL: 14 CNT: 10
+ VAL: 15 CNT: 10
+ VAL: 16 CNT: 10
+ VAL: 17 CNT: 10
+ VAL: 18 CNT: 10
+ VAL: 19 CNT: 10
+

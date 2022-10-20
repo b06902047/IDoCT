@@ -1,0 +1,79 @@
+{
+    "org.apache.druid.query.DruidProcessingConfigTest#testDefaultsMultiProcessor": [
+      "druid.processing.numMergeBuffers",
+      "druid.processing.numThreads",
+      "druid.processing.columnCache.sizeBytes",
+      "druid.processing.buffer.poolCacheMaxCount",
+      "druid.processing.buffer.sizeBytes",
+      "druid.processing.fifo",
+      "druid.processing.tmpDir"
+    ],
+    "org.apache.druid.query.DruidProcessingConfigTest#testDefaultsSingleProcessor": [
+      "druid.processing.numMergeBuffers",
+      "druid.processing.numThreads",
+      "druid.processing.columnCache.sizeBytes",
+      "druid.processing.buffer.poolCacheMaxCount",
+      "druid.processing.buffer.sizeBytes",
+      "druid.processing.fifo",
+      "druid.processing.tmpDir"
+    ],
+    "org.apache.druid.query.DruidProcessingConfigTest#testDefaultsLargeDirect": [
+      "druid.processing.numMergeBuffers",
+      "druid.processing.numThreads",
+      "druid.processing.buffer.sizeBytes"
+    ],
+    "org.apache.druid.query.DruidProcessingConfigTest#testReplacements": [
+      "druid.processing.numMergeBuffers"
+    ],
+    "org.apache.druid.guice.ExtensionsConfigTest#testSerdeWithDefaults": [
+      "druid.extensions.searchCurrentClassloader",
+      "druid.extensions.hadoopContainerDruidClasspath",
+      "druid.extensions.hadoopDependenciesDir",
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsConfigTest#testSerdeWithNonDefaults": [
+      "druid.extensions.searchCurrentClassloader",
+      "druid.extensions.hadoopContainerDruidClasspath",
+      "druid.extensions.hadoopDependenciesDir",
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsConfigTest#testLoadList": [
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#test04DuplicateClassLoaderExtensions": [
+      "druid.extensions.searchCurrentClassloader",
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#test06GetClassLoaderForExtension": [
+      "druid.extensions.searchCurrentClassloader",
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#testGetLoadedModules": [
+      "druid.extensions.searchCurrentClassloader",
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_non_exist_extensions_dir": [
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_wrong_type_extensions_dir": [
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_empty_extensions_dir": [
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_null_load_list": [
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_with_load_list": [
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_with_non_exist_item_in_load_list": [
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#testGetURLsForClasspath": [
+      "druid.extensions.loadList"
+    ],
+    "org.apache.druid.guice.ExtensionsLoaderTest#testExtensionsWithSameDirName": [
+      "druid.extensions.loadList"
+    ]
+  }
