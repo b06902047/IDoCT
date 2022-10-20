@@ -68,7 +68,7 @@
 [[1;34mINFO[m] Reading API signatures: /home/yenc3/project/druid/codestyle/druid-forbidden-apis.txt
 [[1;34mINFO[m] Loading classes to check...
 [[1;34mINFO[m] Scanning classes for violations...
-[[1;34mINFO[m] Scanned 1055 class file(s) for forbidden API invocations (in 0.92s), 0 error(s).
+[[1;34mINFO[m] Scanned 1055 class file(s) for forbidden API invocations (in 0.90s), 0 error(s).
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mdruid-processing[0;1m ---[m
 [[1;34mINFO[m] Using auto detected provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
@@ -77,7 +77,7 @@
 [[1;34mINFO[m]  T E S T S
 [[1;34mINFO[m] -------------------------------------------------------
 [[1;34mINFO[m] Running org.apache.druid.segment.virtual.[1mExpressionVirtualColumnTest[m
-[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.576 s - in org.apache.druid.segment.virtual.[1mExpressionVirtualColumnTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.726 s - in org.apache.druid.segment.virtual.[1mExpressionVirtualColumnTest[m
 [[1;34mINFO[m] 
 [[1;34mINFO[m] Results:
 [[1;34mINFO[m] 
@@ -89,6 +89,6 @@
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  27.323 s
-[[1;34mINFO[m] Finished at: 2022-10-19T19:53:22-05:00
+[[1;34mINFO[m] Total time:  27.293 s
+[[1;34mINFO[m] Finished at: 2022-10-19T19:54:20-05:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m

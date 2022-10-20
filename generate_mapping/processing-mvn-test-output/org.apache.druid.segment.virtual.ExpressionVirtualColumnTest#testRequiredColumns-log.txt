@@ -1,0 +1,5 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.druid:druid-processing[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding druid-processing 25.0.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
