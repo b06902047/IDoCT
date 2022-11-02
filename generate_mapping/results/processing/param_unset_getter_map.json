@@ -1,1 +1,765 @@
-{}
+{
+  "org.apache.druid.query.DruidProcessingConfigTest#testDefaultsMultiProcessor": [
+    "druid.processing.numMergeBuffers",
+    "druid.processing.numThreads",
+    "druid.processing.columnCache.sizeBytes",
+    "druid.processing.buffer.poolCacheMaxCount",
+    "druid.processing.buffer.sizeBytes",
+    "druid.processing.fifo",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.query.DruidProcessingConfigTest#testDefaultsSingleProcessor": [
+    "druid.processing.numMergeBuffers",
+    "druid.processing.numThreads",
+    "druid.processing.columnCache.sizeBytes",
+    "druid.processing.buffer.poolCacheMaxCount",
+    "druid.processing.buffer.sizeBytes",
+    "druid.processing.fifo",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.query.DruidProcessingConfigTest#testDefaultsLargeDirect": [
+    "druid.processing.numMergeBuffers",
+    "druid.processing.numThreads",
+    "druid.processing.buffer.sizeBytes"
+  ],
+  "org.apache.druid.query.DruidProcessingConfigTest#testReplacements": [
+    "druid.processing.numMergeBuffers"
+  ],
+  "org.apache.druid.guice.ExtensionsConfigTest#testSerdeWithDefaults": [
+    "druid.extensions.searchCurrentClassloader",
+    "druid.extensions.hadoopContainerDruidClasspath",
+    "druid.extensions.hadoopDependenciesDir",
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsConfigTest#testSerdeWithNonDefaults": [
+    "druid.extensions.searchCurrentClassloader",
+    "druid.extensions.hadoopContainerDruidClasspath",
+    "druid.extensions.hadoopDependenciesDir",
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsConfigTest#testLoadList": [
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#test04DuplicateClassLoaderExtensions": [
+    "druid.extensions.searchCurrentClassloader",
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#test06GetClassLoaderForExtension": [
+    "druid.extensions.searchCurrentClassloader",
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#testGetLoadedModules": [
+    "druid.extensions.searchCurrentClassloader",
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_non_exist_extensions_dir": [
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_wrong_type_extensions_dir": [
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_empty_extensions_dir": [
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_null_load_list": [
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_with_load_list": [
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#testGetExtensionFilesToLoad_with_non_exist_item_in_load_list": [
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#testGetURLsForClasspath": [
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.guice.ExtensionsLoaderTest#testExtensionsWithSameDirName": [
+    "druid.extensions.loadList"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupBySingleValueString": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByMultiValueString": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByMultiValueStringUnknown": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupBySingleValueStringNotDictionaryEncoded": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByMultiValueStringNotDictionaryEncoded": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByLong": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByDouble": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByFloat": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByForceContextCannotVectorize": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByForceVirtualContextCannotVectorize": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByTrueVirtualContextCannotVectorize": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByContradictionVectorizeFalseVirtualForce": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByContradictionVectorizeForceVirtualFalse": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByContradictionVectorizeFalseVirtualForceNoVirtual": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByContradictionVectorizeForceVirtualFalseNoVirtual": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.VectorizedVirtualColumnTest#testGroupByForceDoestAffectWhenNoVirtualColumns": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testGroupByWithMMappedSegments": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testGroupByWithInMemorySegments": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testGroupByWithMixedSegments": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testGroupByWithSelectFilterWithMMappedSegments": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testGroupByWithSelectFilterWithInMemorySegments": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testGroupByWithSelectFilterWithMixedSegments": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testGroupByWithRegexFilterWithMMappedSegments": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testGroupByWithRegexFilterWithInMemorySegments": [
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.tmpDir"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testGroupByWithRegexFilterWithMixedSegments": [
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.defaultStrategy"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testTopNWithMMappedSegments": [
+    "druid.query.topN.minTopNThreshold"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testTopNWithInMemorySegments": [
+    "druid.query.topN.minTopNThreshold"
+  ],
+  "org.apache.druid.segment.virtual.DummyStringVirtualColumnTest#testTopNWithMixedSegments": [
+    "druid.query.topN.minTopNThreshold"
+  ],
+  "org.apache.druid.guice.SegmentMetadataQueryConfigTest#testSerdeSegmentMetadataQueryConfig": [
+    "druid.query.segmentMetadata.defaultHistory",
+    "druid.query.segmentMetadata.defaultAnalysisTypes"
+  ],
+  "org.apache.druid.query.topn.TopNQueryQueryToolChestTest#testMinTopNThreshold": [
+    "druid.query.topN.minTopNThreshold"
+  ],
+  "org.apache.druid.query.topn.TopNQueryQueryToolChestTest#testResultArraySignature": [
+    "druid.query.topN.minTopNThreshold"
+  ],
+  "org.apache.druid.query.topn.TopNQueryQueryToolChestTest#testResultsAsArrays": [
+    "druid.query.topN.minTopNThreshold"
+  ],
+  "org.apache.druid.query.groupby.GroupByLimitPushDownInsufficientBufferTest#testPartialLimitPushDownMerge": [
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.processing.numMergeBuffers",
+    "druid.processing.buffer.sizeBytes",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage"
+  ],
+  "org.apache.druid.query.groupby.GroupByLimitPushDownInsufficientBufferTest#testPartialLimitPushDownMergeForceAggs": [
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.processing.numMergeBuffers",
+    "druid.processing.buffer.sizeBytes",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryConfigTest#testSerde": [
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.maxMergingDictionarySize",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.maxSelectorDictionarySize",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.maxOnDiskStorage"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryConfigTest#testNoOverrides": [
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.maxMergingDictionarySize",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.maxSelectorDictionarySize",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryConfigTest#testOverrides": [
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.maxMergingDictionarySize",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.maxSelectorDictionarySize",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryConfigTest#testAutomaticMergingDictionarySize": [
+    "druid.query.groupBy.maxMergingDictionarySize"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryConfigTest#testNonAutomaticMergingDictionarySize": [
+    "druid.query.groupBy.maxMergingDictionarySize"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryConfigTest#testAutomaticSelectorDictionarySize": [
+    "druid.query.groupBy.maxSelectorDictionarySize"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryConfigTest#testNonAutomaticSelectorDictionarySize": [
+    "druid.query.groupBy.maxSelectorDictionarySize"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryConfigTest#testUseDefaultOnDiskStorage": [
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryConfigTest#testUseMaxOnDiskStorageWhenClientOverrideIsTooLarge": [
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.maxOnDiskStorage"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryConfigTest#testGetDefaultOnDiskStorageReturnsCorrectValue": [
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.maxOnDiskStorage"
+  ],
+  "org.apache.druid.query.groupby.epinephelinae.vector.VectorGroupByEngineIteratorTest#testCreateOneGrouperAndCloseItWhenClose": [
+    "druid.query.groupBy.forceHashAggregation"
+  ],
+  "org.apache.druid.query.groupby.NestedQueryPushDownTest#testSimpleDoubleAggregation": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.processing.numMergeBuffers",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.buffer.sizeBytes"
+  ],
+  "org.apache.druid.query.groupby.NestedQueryPushDownTest#testNestedQueryWithRenamedDimensions": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.processing.numMergeBuffers",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.buffer.sizeBytes"
+  ],
+  "org.apache.druid.query.groupby.NestedQueryPushDownTest#testDimensionFilterOnOuterAndInnerQueries": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.processing.numMergeBuffers",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.buffer.sizeBytes"
+  ],
+  "org.apache.druid.query.groupby.NestedQueryPushDownTest#testDimensionFilterOnOuterQuery": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.processing.numMergeBuffers",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.buffer.sizeBytes"
+  ],
+  "org.apache.druid.query.groupby.NestedQueryPushDownTest#testDimensionFilterOnInnerQuery": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.processing.numMergeBuffers",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.buffer.sizeBytes"
+  ],
+  "org.apache.druid.query.groupby.NestedQueryPushDownTest#testSubqueryWithExtractionFnInOuterQuery": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.processing.numMergeBuffers",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.buffer.sizeBytes"
+  ],
+  "org.apache.druid.query.groupby.NestedQueryPushDownTest#testHavingClauseInNestedPushDownQuery": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.processing.numMergeBuffers",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.processing.buffer.sizeBytes"
+  ],
+  "org.apache.druid.query.groupby.GroupByQueryRunnerFactoryTest#testMergeRunnersEnsureGroupMerging": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.query.groupBy.maxResults"
+  ],
+  "org.apache.druid.query.aggregation.StringColumnAggregationTest#testGroupBy": [
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.maxOnDiskStorage"
+  ],
+  "org.apache.druid.query.aggregation.StringColumnAggregationTest#testTimeseries": [
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.processing.tmpDir",
+    "druid.query.groupBy.maxIntermediateRows",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.defaultStrategy",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.maxOnDiskStorage"
+  ],
+  "org.apache.druid.query.aggregation.post.FinalizingFieldAccessPostAggregatorTest#testIngestAndQueryWithArithmeticPostAggregator": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.defaultStrategy"
+  ],
+  "org.apache.druid.query.aggregation.post.FinalizingFieldAccessPostAggregatorTest#testSerde": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.defaultStrategy"
+  ],
+  "org.apache.druid.query.aggregation.post.FinalizingFieldAccessPostAggregatorTest#testResultArraySignature": [
+    "druid.query.groupBy.maxOnDiskStorage",
+    "druid.query.groupBy.maxResults",
+    "druid.query.groupBy.singleThreaded",
+    "druid.query.groupBy.intermediateCombineDegree",
+    "druid.query.groupBy.bufferGrouperMaxLoadFactor",
+    "druid.query.groupBy.defaultOnDiskStorage",
+    "druid.query.groupBy.bufferGrouperInitialBuckets",
+    "druid.query.groupBy.forceHashAggregation",
+    "druid.query.groupBy.numParallelCombineThreads",
+    "druid.query.groupBy.defaultStrategy"
+  ],
+  "org.apache.druid.query.ChainedExecutionQueryRunnerTest#testQueryCancellation": [
+    "druid.processing.fifo"
+  ],
+  "org.apache.druid.query.ChainedExecutionQueryRunnerTest#testQueryTimeout": [
+    "druid.processing.fifo"
+  ],
+  "org.apache.druid.query.ChainedExecutionQueryRunnerTest#testSubmittedTaskType": [
+    "druid.processing.fifo"
+  ],
+  "org.apache.druid.query.metadata.SegmentMetadataQueryQueryToolChestTest#testCacheStrategy": [
+    "druid.query.segmentMetadata.defaultAnalysisTypes"
+  ],
+  "org.apache.druid.query.metadata.SegmentMetadataQueryQueryToolChestTest#testMergeAggregators": [
+    "druid.query.segmentMetadata.defaultAnalysisTypes"
+  ],
+  "org.apache.druid.query.metadata.SegmentMetadataQueryQueryToolChestTest#testMergeAggregatorsOneNull": [
+    "druid.query.segmentMetadata.defaultAnalysisTypes"
+  ],
+  "org.apache.druid.query.metadata.SegmentMetadataQueryQueryToolChestTest#testMergeAggregatorsAllNull": [
+    "druid.query.segmentMetadata.defaultAnalysisTypes"
+  ],
+  "org.apache.druid.query.metadata.SegmentMetadataQueryQueryToolChestTest#testFilterSegments": [
+    "druid.query.segmentMetadata.defaultHistory"
+  ],
+  "org.apache.druid.query.metadata.SegmentMetadataQueryQueryToolChestTest#testMergeRollup": [
+    "druid.query.segmentMetadata.defaultHistory"
+  ],
+  "org.apache.druid.query.metadata.SegmentAnalyzerTest#testIncrementalWorks": [
+    "druid.query.segmentMetadata.defaultAnalysisTypes"
+  ],
+  "org.apache.druid.query.metadata.SegmentAnalyzerTest#testMappedWorks": [
+    "druid.query.segmentMetadata.defaultAnalysisTypes"
+  ]
+}
