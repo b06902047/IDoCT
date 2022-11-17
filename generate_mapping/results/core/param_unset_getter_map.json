@@ -1,0 +1,216 @@
+{
+  "org.apache.druid.js.JavaScriptConfigTest#testSerde": [
+    "druid.javascript.enabled"
+  ],
+  "org.apache.druid.js.JavaScriptConfigTest#testSerdeWithDefaults": [
+    "druid.javascript.enabled"
+  ],
+  "org.apache.druid.java.util.emitter.core.LoggingEmitterConfigTest#testDefaults": [
+    "druid.emitter.logging.logLevel",
+    "druid.emitter.logging.loggerClass"
+  ],
+  "org.apache.druid.java.util.emitter.core.LoggingEmitterConfigTest#testDefaultsLegacy": [
+    "druid.emitter.logging.logLevel",
+    "druid.emitter.logging.loggerClass"
+  ],
+  "org.apache.druid.java.util.emitter.core.LoggingEmitterConfigTest#testSettingEverything": [
+    "druid.emitter.logging.logLevel",
+    "druid.emitter.logging.loggerClass"
+  ],
+  "org.apache.druid.java.util.emitter.core.LoggingEmitterConfigTest#testSettingEverythingLegacy": [
+    "druid.emitter.logging.logLevel",
+    "druid.emitter.logging.loggerClass"
+  ],
+  "org.apache.druid.java.util.emitter.core.ParametrizedUriEmitterTest#testParametrizedEmitterCreated": [
+    "druid.emitter.parametrized.recipientBaseUrlPattern"
+  ],
+  "org.apache.druid.java.util.emitter.core.ParametrizedUriEmitterTest#testEmitterWithFeedUriExtractor": [
+    "druid.emitter.http.maxBatchSize",
+    "druid.emitter.http.flushCount",
+    "druid.emitter.parametrized.recipientBaseUrlPattern",
+    "druid.emitter.http.batchingStrategy",
+    "druid.emitter.http.minHttpTimeoutMillis",
+    "druid.emitter.http.batchQueueSizeLimit",
+    "druid.emitter.http.basicAuthentication",
+    "druid.emitter.http.flushMillis",
+    "druid.emitter.http.flushTimeOut"
+  ],
+  "org.apache.druid.java.util.emitter.core.ParametrizedUriEmitterTest#testEmitterWithMultipleFeeds": [
+    "druid.emitter.http.maxBatchSize",
+    "druid.emitter.parametrized.recipientBaseUrlPattern",
+    "druid.emitter.http.batchingStrategy",
+    "druid.emitter.http.minHttpTimeoutMillis",
+    "druid.emitter.http.batchQueueSizeLimit",
+    "druid.emitter.http.basicAuthentication",
+    "druid.emitter.http.flushMillis",
+    "druid.emitter.http.flushTimeOut"
+  ],
+  "org.apache.druid.java.util.emitter.core.ParametrizedUriEmitterTest#testEmitterWithParametrizedUriExtractor": [
+    "druid.emitter.http.maxBatchSize",
+    "druid.emitter.http.flushCount",
+    "druid.emitter.parametrized.recipientBaseUrlPattern",
+    "druid.emitter.http.batchingStrategy",
+    "druid.emitter.http.minHttpTimeoutMillis",
+    "druid.emitter.http.batchQueueSizeLimit",
+    "druid.emitter.http.basicAuthentication",
+    "druid.emitter.http.flushMillis",
+    "druid.emitter.http.flushTimeOut"
+  ],
+  "org.apache.druid.java.util.emitter.core.ParametrizedUriEmitterTest#failEmitMalformedEvent": [
+    "druid.emitter.parametrized.recipientBaseUrlPattern"
+  ],
+  "org.apache.druid.java.util.emitter.core.HttpPostEmitterStressTest#testLargeEventsQueueLimit": [
+    "druid.emitter.http.minHttpTimeoutMillis",
+    "druid.emitter.http.basicAuthentication",
+    "druid.emitter.http.flushTimeOut"
+  ],
+  "org.apache.druid.java.util.emitter.core.HttpPostEmitterStressTest#testLargeAndSmallEventsQueueLimit": [
+    "druid.emitter.http.minHttpTimeoutMillis",
+    "druid.emitter.http.basicAuthentication",
+    "druid.emitter.http.flushTimeOut"
+  ],
+  "org.apache.druid.java.util.emitter.core.HttpEmitterConfigTest#testDefaultsLegacy": [
+    "druid.emitter.http.maxBatchSize",
+    "druid.emitter.http.flushCount",
+    "druid.emitter.http.batchingStrategy",
+    "druid.emitter.http.minHttpTimeoutMillis",
+    "druid.emitter.http.batchQueueSizeLimit",
+    "druid.emitter.http.basicAuthentication",
+    "druid.emitter.http.flushMillis",
+    "druid.emitter.http.flushTimeOut"
+  ],
+  "org.apache.druid.java.util.emitter.core.HttpEmitterConfigTest#testSettingEverythingLegacy": [
+    "druid.emitter.http.maxBatchSize",
+    "druid.emitter.http.flushCount",
+    "druid.emitter.http.batchingStrategy",
+    "druid.emitter.http.minHttpTimeoutMillis",
+    "druid.emitter.http.batchQueueSizeLimit",
+    "druid.emitter.http.basicAuthentication",
+    "druid.emitter.http.flushMillis",
+    "druid.emitter.http.flushTimeOut"
+  ],
+  "org.apache.druid.common.config.NullHandlingTest#test_defaultValueForClass_double": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.common.config.NullHandlingTest#test_defaultValueForClass_long": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.common.config.NullHandlingTest#test_defaultValueForClass_number": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.common.config.NullHandlingTest#test_defaultValueForClass_string": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.common.config.NullHandlingTest#test_ignoreNullsStrings": [
+    "druid.generic.ignoreNullsForStringCardinality"
+  ],
+  "org.apache.druid.data.input.impl.HttpInputSourceConfigTest#testNullAllowedProtocolsUseDefault": [
+    "druid.ingestion.http.allowedProtocols"
+  ],
+  "org.apache.druid.data.input.impl.HttpInputSourceConfigTest#testCustomAllowedProtocols": [
+    "druid.ingestion.http.allowedProtocols"
+  ],
+  "org.apache.druid.common.config.NullHandlingTest#test_defaultValueForClass_float": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.common.config.NullHandlingTest#test_defaultValueForClass_double": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.common.config.NullHandlingTest#test_defaultValueForClass_long": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.common.config.NullHandlingTest#test_defaultValueForClass_string": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.common.config.NullHandlingTest#test_ignoreNullsStrings": [
+    "druid.generic.ignoreNullsForStringCardinality"
+  ],
+  "org.apache.druid.math.expr.ExprEvalTest#testStringSerde": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.ExprEvalTest#testStringSerdeTooBig": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.ExprEvalTest#testLongSerde": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.ExprEvalTest#testDoubleSerde": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.ExprEvalTest#testStringArraySerde": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.ExprEvalTest#testLongArraySerde": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.ExprEvalTest#testDoubleArraySerde": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.ExprEvalTest#test_coerceListToArray": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.ExprEvalTest#testStringArrayToNumberArray": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.OutputTypeTest#testConstantsAndIdentifiers": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.OutputTypeTest#testUnaryOperators": [
+    "druid.generic.useDefaultValueForNull",
+    "druid.expressions.useStrictBooleans"
+  ],
+  "org.apache.druid.math.expr.OutputTypeTest#testBinaryMathOperators": [
+    "druid.expressions.useStrictBooleans"
+  ],
+  "org.apache.druid.math.expr.OutputTypeTest#testConditionalFunctions": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.OutputTypeTest#testStringFunctions": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.OutputTypeTest#testArrayFunctions": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.OutputTypeTest#testReduceFunctions": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.OutputTypeTest#testApplyFunctions": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.OutputTypeTest#testEvalAutoConversion": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.VectorExprSanityTest#testUnaryOperators": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.VectorExprSanityTest#testBinaryComparisonOperators": [
+    "druid.generic.useDefaultValueForNull",
+    "druid.expressions.useStrictBooleans"
+  ],
+  "org.apache.druid.math.expr.VectorExprSanityTest#testUnaryLogicOperators": [
+    "druid.generic.useDefaultValueForNull",
+    "druid.expressions.useStrictBooleans"
+  ],
+  "org.apache.druid.math.expr.VectorExprSanityTest#testBinaryLogicOperators": [
+    "druid.generic.useDefaultValueForNull",
+    "druid.expressions.useStrictBooleans"
+  ],
+  "org.apache.druid.math.expr.VectorExprSanityTest#testBinaryOperatorTrees": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.VectorExprSanityTest#testUnivariateFunctions": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.VectorExprSanityTest#testBivariateMathFunctions": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.VectorExprSanityTest#testSymmetricalBivariateFunctions": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.VectorExprSanityTest#testCast": [
+    "druid.generic.useDefaultValueForNull"
+  ],
+  "org.apache.druid.math.expr.VectorExprSanityTest#testStringFns": [
+    "druid.generic.useDefaultValueForNull"
+  ]
+}
