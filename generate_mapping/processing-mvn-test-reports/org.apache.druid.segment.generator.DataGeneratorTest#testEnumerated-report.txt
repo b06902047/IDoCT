@@ -1,8 +1,0 @@
-
-DIMENSION dimA
-============
- VAL: Bar CNT: 1020
- VAL: Foo CNT: 1535
- VAL: Hello CNT: 4963
- VAL: World CNT: 2482
-

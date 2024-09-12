@@ -1,3 +1,0 @@
-2022-10-20T00:29:43,049 INFO [main] org.apache.druid.segment.TestIndex - Realtime loading index file[file:/home/yenc3/project/druid/processing/target/test-classes/druid.sample.numeric.tsv]
-2022-10-20T00:29:43,751 INFO [main] org.apache.druid.segment.TestIndex - Loaded 1,209 lines in 581 millis.
-2022-10-20T00:29:44,738 INFO [main] org.apache.druid.segment.join.table.BroadcastSegmentIndexedTable - Created BroadcastSegmentIndexedTable with 1209 rows.

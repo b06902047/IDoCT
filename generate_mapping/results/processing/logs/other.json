@@ -1,1 +1,1 @@
-["org.apache.druid.segment.ReferenceCountingSegmentTest#testMultipleClose", "org.apache.druid.segment.ReferenceCountingSegmentTest#testExposesWrappedSegment", "org.apache.druid.segment.ReferenceCountingSegmentTest#testSegmentAs", "org.apache.druid.segment.V9IndexLoaderTest#testLoadSegmentDamagedFileWithLazy"]
+["org.apache.druid.query.metadata.SegmentMetadataQueryQueryToolChestTest#testMergeAggregatorsConflict", "org.apache.druid.query.metadata.SegmentAnalyzerTest#testAnalyzingSegmentWithNonExistentAggregator"]
